@@ -1,0 +1,30 @@
+{
+    "features": [
+        "promised_hours",
+        "distance_km",
+        "parcel_weight_kg",
+        "log_declared_value",
+        "n_stops",
+        "rain_flag",
+        "sale_event_flag",
+        "is_cod",
+        "is_weekend",
+        "dispatch_hour",
+        "hub_tier",
+        "hub_daily_capacity",
+        "label_print_batch",
+        "scanner_build_no",
+        "tape_roll_no",
+        "sticker_serial_mod",
+        "shelf_slot_no"
+    ],
+    "regression_model": "delivery_time_model.joblib",
+    "classification_model": "delay_classifier.joblib",
+    "classification_threshold": 0.35,
+    "delay_target_definition": "delivery_hours > promised_hours",
+    "service_promised_hours": {
+        "Express": 36,
+        "Standard": 60,
+        "Economy": 96
+    }
+}
